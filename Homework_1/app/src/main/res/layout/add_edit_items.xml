@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/EditItem"
+        android:hint="@string/edit"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10" >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/SaveEdit"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/EditItem"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="75dp"
+        android:text="Save"
+        android:onClick="onSubmit"/>
+
+    <Button
+        android:id="@+id/CancelEdit"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/EditItem"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="75dp"
+        android:text="Cancel" />
+
+
+</RelativeLayout>
